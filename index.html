@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma the Puma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script>window.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".menu-icon").addEventListener("click", () => {
+          document.querySelector(".main-menu").classList.toggle("menu-show");
+        });
+      });</script>
+</head>
+<body class="main-page">
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-1600.jpg"
+                   media="(min-width: 901px)">
+            <source srcset="images/hero-900.jpg"
+                   media="(min-width: 501px)">
+            <source srcset="images/hero-600.jpg"
+                   media="(max-width: 500px)">
+        
+            <img src="images/hero-900.jpg" alt="fall mountains">
+         </picture>
+         <div class="overlay">
+             <div>
+                <h1>Uma the Puma</h1>
+                <p>Musings and such.</p>
+             </div>
+         </div>
+    </div>   
+
+    <header>
+        <div class="menu-icon">
+            <div></div>
+            <div></div>
+        </div>
+       
+        <nav class="main-menu">
+
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="about/">About </a></li>
+                <li> <a href="form/">Form </a></li>
+            </ul>    
+        </nav>
+        <!-- <svg viewBox="0 0 200 200" width="200" height="200">
+            <circle cx="100" cy="100" r="80" fill="#f9ca10" stroke-width="40" stroke="#f6e58d" />
+            <circle cx="75" cy="55" r="50" fill="#f0932b">
+        
+          </svg> -->
+    </header>
+
+    <main>
+        <h2>First Three Weeks of Junior Year</h2>
+        
+        <article class="panel">
+            <div class="image-wrapper left">
+                <img src="images/alpineloop.jpg" alt="two girls on a scenic road">
+            </div>
+
+            <div class="text-wrapper">
+                <h3 class="h3">Things are getting serious...</h3>
+                <p class="paragraph">Starting my third year at BYU has been sort of a crazy experience. When did I turn into one of the older kids on campus? How is everyone in all of my classes married? It seems like yesterday I was moving into my dorm at Helaman Halls. College isn't even close to being over for me, yet I still feel like the time is flying by.</p>
+                <p class="paragraph">But yes, it's true: <em>I'm an Junior in college.</em> And soon enough, I'll be graduated. </p>
+                <p class="paragraph">To learn more about BYU, my college, <a href="https://www.byu.edu/" target="_blank"> visit their website here.</a></p>
+            </div>    
+        </article>
+
+        <article class="panel">
+            <div class="image-wrapper">
+                <img src="images/pumpkinpatch.jpg" alt="three girls at a pumpkin patch">
+            </div>
+            
+            <div class="text-wrapper left">
+                <h3 class="h3">Little things</h3>
+                <p class="paragraph">I found myself feeling pretty stressed these past few weeks, but I did notice that there were some good ways to deal with it. My favorite way was probably meeting up with friends to eat snacks on campus. Now that school is back to being in-person, I see so many people that I know on campus everyday, and that has been so fun! </p>
+                <p>I've loved being reunited with some old friends!</p>
+            </div>
+
+        </article>
+
+        <article>
+           
+
+            <h3>Here's an overview of what I'm learning in each of my classes this semester. </h3>
+            <dl>
+                <dt>Social Development</dt>
+                <dd>In this class, I am learning about how we as humans develop our social skills and the schemas and scripts surrounding social interactions. It seems pretty interesting, but there is way too much reading.</dd>
+                <dt>Media, Family and Human Development</dt>
+                <dd>This class is all about media. Finally, a reason to be on Instragram while I'm studying!</dd>
+                <dt>Adolescent Development</dt>
+                <dd>I'm learning all about what it is like to be a teenager. Luckily for me, those years aren't too far gone. I remember them all too well!</dd>
+                <dt>Intuitive Eating</dt>
+                <dd>This class is teaching me all about intuitive eating and body image. This class has helped me really focus on my goal to cook more and nourish my body this year.</dd>
+                <dt>Web Design</dt>
+                <dd>Web Design is sort of kicking my butt. I have no idea what is going on most of the time, but I am definitely excited to learn more. </dd>
+                
+            </dl>
+        </article>
+    </main>
+
+    <div class="cards">
+        <div class="card">
+            <a>
+                <img src="images/card1.jpg" alt="trees and mountain">
+                <div class="overlay"><p>favorite fall recipes</p>
+                </div>    
+            </a>
+        </div>
+        <div class="card">
+            <a>
+                <img src="images/card2.jpg" alt="fall trees">
+                <div class="overlay"><p>uma's fall photos</p>
+                </div>    
+            </a>
+        </div>
+        <div class="card">
+            <a>
+                <img src="images/card3.jpg" alt="bench by lake">
+                <div class="overlay"><p>journal entry</p>
+                </div>    
+            </a>
+        </div>
+        <div class="card">
+            <a >
+                <img src="images/card4.jpg" alt="girl in green sweater">
+                <div class="overlay"><p>fall playlist</p>
+                </div>    
+            </a>
+        </div>
+    </div>     
+    
+    <footer>
+        <p>I am so grateful to be here at BYU. Everyone wish me luck this year!</p>
+        <a class="button" href="#">subscribe now</a>   
+    </footer>
+
+    <!-- <div class="loader loader-style1" title="0">
+        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+        <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+        s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+        c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+        <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+        C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml"
+        attributeName="transform"
+            type="rotate"
+            from="0 20 20"
+            to="360 20 20"
+            dur="0.5s"
+            repeatCount="indefinite"/>
+          </path>
+        </svg>
+      </div> -->
+    
+    
+</body>
+
+
+</html>

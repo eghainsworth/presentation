@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <script>window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".menu-icon").addEventListener("click", () => {
+        document.querySelector(".main-menu").classList.toggle("menu-show");
+      });
+    });</script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="../index.html"> Home </a> </li>
+                <li> <a href="../about/">About </a> </li>
+                <li> <a>Form </a> </li>
+            </ul>    
+        </nav>
+        <svg viewBox="0 0 200 200" width="200" height="200">
+            <circle cx="100" cy="100" r="80" fill="#f9ca24" stroke-width="40" stroke="#f6e58d" />
+            <circle cx="75" cy="55" r="50" fill="#f0932b">
+        
+          </svg>
+    </header>
+
+    <main>
+      <section>
+        <h2>You and Uma Compatability Quiz</h2>
+        <form>
+          <!-- A label's for atrribute connects it to an <input> with a matching id. For example, the label below with attribute for="name" connects it to the input with id="name"
+        
+      When a label is connected to an input, the label can be clicked to select the input. This is particularly useful for radio buttons and checkboxes. -->
+          <label for="name">Full name:</label>
+      
+          <!-- An input of type="text" creates a single line text field. 
+      The name attribute is the name of the form control submitted to the server as part of the name/value pair. The value is what the user inputs  -->
+          <input type="text" name="name" id="name">
+      
+          <!--  Assigning an input with a type will allow touch devices to present a virtual keyboard suitable for the input type (numbers for tel, @ for email, calendar for date, etc.). 
+      
+      If the required attribute is used, the user must enter a correct value before the form will submit.
+      -->
+          <label for="email">Email address:</label>
+          <input type="email" name="email" id="email" required>
+      
+          <label for="phone">Phone number:</label>
+          <input type="tel" name="phone" id="phone">
+      
+          <label for="month">Your favorite month:</label>
+          <input type="month" name="month" id="month">
+      
+          <!-- A fieldset groups related form elements - it is particularly helpful with radio buttons and checkboxes. A fieldset should include a legend to make the form accessible as the legend will be read by a screen reader before it reads the form elements.  -->
+          <fieldset>
+            <legend>Which of the following snacks would make your top 15 favorite snacks from Maverik? (Check all that apply)</legend>
+      
+            <!-- To "connect" all checkboxes or radio buttons, the related inputs should all have the same name attribute. You should provide individual value attributes for each input that will be submitted if the input is selected.  
+           
+      Mulitple checkboxes can be selected. Only one radio button can be selected. -->
+            <input type="checkbox" id="wombat" name="ingredients" value="wombat">
+            <label for="wombat">White Cheddar Cheeto Puffs</label>
+      
+            <input type="checkbox" id="kiwi-feet" name="ingredients" value="kiwi-feet">
+            <label for="kiwi-feet">Reese's Take 5</label>
+      
+            <input type="checkbox" id="eucalyptus" name="ingredients" value="eucalyptus">
+            <label for="eucalyptus">Diet Coke with pebble ice</label>
+      
+            <input type="checkbox" id="emu" name="ingredients" value="emu">
+            <label for="emu">Lemon Poppyseed Muffin</label>
+      
+            <input type="checkbox" id="kanga" name="ingredients" value="kanga-claw">
+            <label for="kanga">Peach Wheelies</label>
+      
+            <input type="checkbox" id="platy" name="ingredients" value="platypus-liver">
+            <label for="platy">Dino Eggs</label>
+          </fieldset>
+      
+          <fieldset>
+            <legend>What is your opinion on Adam Driver?</legend>
+      
+            <input type="radio" name="taste" id="asphalt" value="asphalt">
+            <label for="asphalt">He is hot!</label>
+      
+            <input type="radio" name="taste" id="tar" value="tar">
+            <label for="tar">He's okay.</label>
+      
+            <input type="radio" name="taste" id="salt" value="salty">
+            <label for="salt">He's a little ugly but not terrible.</label>
+      
+            <input type="radio" name="taste" id="delicious" value="delicious">
+            <label for="delicious">He is hideous!</label>
+          </fieldset>
+      
+          <!-- the placeholder attribute appears when no text is present. For accessibilty reasons, don't use a placeholder instead of a label  -->
+          <label for="haiku">Tell us your favorite thing about Uma the Puma:</label>
+          <textarea name="haiku" id="haiku" rows="10" placeholder="5/7/5 syllable count"></textarea>
+      
+          <!-- You will often see <input type="submit"> instead of <button type="submit">. They are the same functionally, but <button> is newer and more easily styled.    -->
+          <button type="submit">Submit Now</button>
+      
+        </form>
+      </section>
+ 
+        <!-- <h1>Form</h1>
+        <article>
+            <h2>Things are getting serious...</h2>
+            <p>Starting my third year at BYU has been sort of a crazy experience. When did I turn into one of the older kids on campus? How is everyone in all of my classes married?</p>
+            <p>But yes, it's true: <em>I'm an adult now.</em> A real one. </p> -->
+
+        
+            <footer class="svg">
+                <img src="../images/arrow-up-circle.svg" alt="svg of an archive folder">
+            </footer>
+
+            <div class="loader loader--style1" title="0">
+                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+                  s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+                  c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+                  C22.32,8.481,24.301,9.057,26.013,10.047z">
+                  <animateTransform attributeType="xml"
+                    attributeName="transform"
+                    type="rotate"
+                    from="0 20 20"
+                    to="360 20 20"
+                    dur="0.5s"
+                    repeatCount="indefinite"/>
+                  </path>
+                </svg>
+              </div>
+
+        </article>
